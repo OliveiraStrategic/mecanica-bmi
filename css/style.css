@@ -624,6 +624,73 @@ img {
 
 
 /* ==============================================================
+   PARCEIROS OFICIAIS
+   ============================================================== */
+.partners-category {
+    margin-bottom: 2rem;
+}
+
+.partners-flex {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.partner-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.partner-logo {
+    height: 110px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 8px;
+    border: 1px dashed rgba(255,107,0,0.2);
+    margin-bottom: 1rem;
+    padding: 15px;
+}
+
+.partner-logo img {
+    color: var(--clr-text-dim);
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.partner-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 auto 15px auto;
+    width: fit-content;
+}
+
+.partner-badge.institutional {
+    background: rgba(74, 144, 226, 0.1);
+    color: #4A90E2;
+    border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+.partner-badge.commercial {
+    background: rgba(241, 196, 15, 0.1);
+    color: #f1c40f;
+    border: 1px solid rgba(241, 196, 15, 0.3);
+}
+
+.partner-badge.faction {
+    background: rgba(255, 50, 50, 0.1);
+    color: #ff3333;
+    border: 1px solid rgba(255, 50, 50, 0.3);
+}
+
+/* ==============================================================
    FORMS / SERVICES SECTION
    ============================================================== */
 .service-tabs {
