@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<!-- Desenvolvido de forma personalizada por Oliveira Strategic -->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal Oficial da Mecânica BMI - Serviços automotivos premium.">
+    <meta name="author" content="Oliveira Strategic">
+    <title>Mecânica BMI | Portal Oficial</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo/logo sem fundo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+        <!-- APP CONTAINER -->
+    <div class="app-container">
+    
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/logo/logo sem fundo.png" alt="Mecânica BMI" class="logo">
+                <span class="version">OS v2.0</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#inicio" class="nav-btn active"><i class="ph ph-squares-four"></i> Principal</a>
+                <a href="#mecanica" class="nav-btn"><i class="ph ph-wrench"></i> A Mecânica</a>
+                <a href="#operacao" class="nav-btn"><i class="ph ph-terminal"></i> Operação</a>
+                <a href="#servicos" class="nav-btn"><i class="ph ph-clipboard-text"></i> Serviços Internos</a>
+                <a href="#parceiros" class="nav-btn"><i class="ph ph-handshake"></i> Parceiros Oficiais</a>
+                <a href="#recrutamento" class="nav-btn recrutamento"><i class="ph ph-users-three"></i> Recrutamento</a>
+                <a href="#midia" class="nav-btn"><i class="ph ph-camera"></i> Rádio / Mídia</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="https://discord.gg/vDZvtrs8Ff" target="_blank" class="btn-discord">
+                    <i class="ph-fill ph-discord-logo"></i> Discord Central
+                </a>
+                <p class="copyright">&copy; 2026 Mecânica BMI</p>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            
+            <button class="mobile-toggle"><i class="ph ph-list"></i></button>
+
+            <!-- VIEW: INICIO -->
+            <div id="view-inicio" class="view active">
+    <!-- Home Hero -->
+    <header id="home" class="hero section">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="glow-text">Portal Oficial da<br><span class="text-orange">Mecânica BMI</span></h1>
+            <p class="subtitle">A organização automotiva mais respeitada de Los Santos. Fundada em 26/02/2026. Elevando
+                o padrão de qualidade, atendimento e performance corporativa.</p>
+
+            <div class="hero-actions">
+                <a href="#servicos" class="btn-primary btn-lg">Central de Atendimento</a>
+                <a href="#regras-gerais" class="btn-secondary btn-lg">Consultar Regras</a>
+            </div>
+
+            <!-- Quick Access Cards -->
+            <div class="quick-access">
+                <a href="#servicos" class="quick-card">
+                    <i class="ph ph-money text-orange"></i>
+                    <span>Solicitar Pagamento</span>
+                </a>
+                <a href="#ponto" class="quick-card">
+                    <i class="ph ph-clock text-orange"></i>
+                    <span>Bate-Ponto</span>
+                </a>
+                <a href="#desmanche" class="quick-card">
+                    <i class="ph ph-wrench text-orange"></i>
+                    <span>Regras Desmanche</span>
+                </a>
+                <a href="#hierarquia" class="quick-card">
+                    <i class="ph ph-users-three text-orange"></i>
+                    <span>Nossa Hierarquia</span>
+                </a>
+                <a href="#metas" class="quick-card">
+                    <i class="ph ph-target text-orange"></i>
+                    <span>Meta Semanal</span>
+                </a>
+                <a href="#comandos" class="quick-card">
+                    <i class="ph ph-terminal text-orange"></i>
+                    <span>Comandos do RP</span>
+                </a>
+            </div>
+        </div>
+        <!-- DASHBOARD PANELS (Destaques e Avisos) -->
+    <section class="section dashboard-panels" style="padding-top: 0;">
+        <div class="container">
+            <div class="grid-2">
+                <div class="card panel-card glow-border">
+                    <h3 class="text-orange mb-3"><i class="ph-fill ph-warning-circle"></i> Avisos da Semana</h3>
+                    <ul class="clean-list">
+                        <li><i class="ph ph-caret-right text-orange"></i> Nova cota semanal ativada no painel.</li>
+                        <li><i class="ph ph-caret-right text-orange"></i> Reunião geral no Discord na sexta às 21h.</li>
+                        <li><i class="ph ph-caret-right text-orange"></i> Ajustes nos salários base da Mecânica Alta.</li>
+                    </ul>
+                </div>
+                <div class="card panel-card">
+                    <h3 class="mb-3"><i class="ph-fill ph-star"></i> Funcionários Destaque</h3>
+                    <div style="display:flex; gap:15px; align-items:center;">
+                        <div style="width:60px; height:60px; border-radius:50%; background:#FF6B00; display:flex; align-items:center; justify-content:center; font-size:1.5rem; font-weight:bold; color:#000;">1º</div>
+                        <div>
+                            <strong class="text-white block" style="font-size:1.1rem;">Mecânico Desconhecido</strong>
+                            <span class="text-dim text-sm">+250hs logadas na semana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- VIEW: MECANICA -->
+    <div id="view-mecanica" class="view">
+    <!-- 1. HISTÓRIA -->
+    <section id="historia" class="section bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2>A Nossa História Institucional</h2>
+                <p>Tradição, excelência e dominância no mercado de Los Santos</p>
+            </div>
+
+            <div class="card mb-4"
+                style="text-align: center; max-width: 850px; margin: 0 auto; border-top: 3px solid var(--clr-primary);">
+                <p class="text-lg mb-3">A <strong>Mecânica BMI</strong> oficializou sua fundação no servidor em
+                    <strong>26 de fevereiro de 2026</strong>, sob a visão diretiva da aliança entre <strong
+                        class="text-orange">Fenix, Lua, G4bz e Euarthurdso</strong>.
+                </p>
+                <p class="text-md text-dim mb-3">Nascemos com a irredutível premissa de profissionalizar as demandas de
+                    reparos automotivos, expurgando o amadorismo e entregando um padrão AAA para todos os cidadãos.
+                    Rapidamente, fomos reconhecidos e consolidados pela liderança como uma organização que opera sob
+                    bases de alta produtividade e conduta corporativa rigorosa.</p>
+                <p class="text-md text-dim">Operamos através de uma forte divisão burocrática e meritocracia. Aqui, cada
+                    mecânico é a extensão da nossa reputação, trabalhando dentro de um ecossistema respeitado, moldado
+                    pela hierarquia e lealdade incontestável. Somos o pilar da mecânica premium da cidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. DONOS E LIDERANÇA -->
+    <section id="donos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Alto Comando e Liderança</h2>
+                <p>Os responsáveis diretos por administrar e manter o alto padrão da Mecânica BMI</p>
+            </div>
+
+            <div class="founders-grid">
+                <div class="founder-card glow-border text-center" style="padding: 2.5rem 1.5rem;">
+                    <div
+                        style="background: rgba(255,107,0,0.1); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; border: 1px solid rgba(255,107,0,0.3);">
+                        <i class="ph-fill ph-crown font-xl text-orange" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h4 class="text-lg mb-1">Fenix</h4>
+                    <p class="text-orange font-medium mb-3">Fundador & Diretor Geral</p>
+                    <p class="text-xs text-dim line-height-relaxed">Responsável pelo direcionamento principal da
+                        mecânica, estruturação da base corporativa e tomador final das decisões essenciais no RP.</p>
+                </div>
+                <div class="founder-card glow-border text-center" style="padding: 2.5rem 1.5rem;">
+                    <div
+                        style="background: rgba(255,107,0,0.1); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; border: 1px solid rgba(255,107,0,0.3);">
+                        <i class="ph-fill ph-diamonds-four font-xl text-orange" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h4 class="text-lg mb-1">Lua</h4>
+                    <p class="text-orange font-medium mb-3">Fundadora & Tesoureira</p>
+                    <p class="text-xs text-dim line-height-relaxed">Coordena meticulosamente a parte contábil,
+                        pagamentos de salários semanais, fechamento de metas e a estabilidade da folha salarial.</p>
+                </div>
+                <div class="founder-card glow-border text-center" style="padding: 2.5rem 1.5rem;">
+                    <div
+                        style="background: rgba(255,107,0,0.1); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; border: 1px solid rgba(255,107,0,0.3);">
+                        <i class="ph-fill ph-shield-star font-xl text-orange" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h4 class="text-lg mb-1">G4bz</h4>
+                    <p class="text-orange font-medium mb-3">Fundador Executivo</p>
+                    <p class="text-xs text-dim line-height-relaxed">Mantém os pilares das leis e regulamentos.
+                        Responsável pelo rigoroso respeito das regras hierárquicas e pela aplicação da disciplina.</p>
+                </div>
+                <div class="founder-card glow-border text-center" style="padding: 2.5rem 1.5rem;">
+                    <div
+                        style="background: rgba(255,107,0,0.1); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; border: 1px solid rgba(255,107,0,0.3);">
+                        <i class="ph-fill ph-wrench font-xl text-orange" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h4 class="text-lg mb-1">Euarthurdso</h4>
+                    <p class="text-orange font-medium mb-3">Fundador Operacional</p>
+                    <p class="text-xs text-dim line-height-relaxed">Gestor supremo dos processos da garagem, cuidando do
+                        fluxo de atendimento, serviços de mecânica expressa e regulamentação de desmanche.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. HIERARQUIA -->
+    <section id="hierarquia" class="section bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hierarquia Oficial</h2>
+                <p>Conheça nossa cadeia de comando do topo à base</p>
+            </div>
+
+            <div class="hierarchy-container">
+                <!-- Iniciais -->
+                <div class="hierarchy-category">
+                    <h3>Iniciais</h3>
+                    <div class="hierarchy-grid">
+                        <div class="rank-card">
+                            <h4>Aprendiz-Mecânica</h4>
+                        </div>
+                        <div class="rank-card">
+                            <h4>Mecânico-Estagiário</h4>
+                        </div>
+                        <div class="rank-card">
+                            <h4>Mecânico-Junior</h4>
+                        </div>
+                        <div class="rank-card">
+                            <h4>Mecânico-Auxiliar</h4>
+                        </div>
+                        <div class="rank-card">
+                            <h4>Mecânico de Manutenção</h4>
+                        </div>
+                        <div class="rank-card">
+                            <h4>Mecânico-Automotivo</h4>
+                        </div>
+                        <div class="rank-card">
+                            <h4>Mecânico-Sênior</h4>
+                        </div>
+                        <div class="rank-card">
+                            <h4>Mecânico</h4>
+                        </div>
+                        <div class="rank-card">
+                            <h4>Mecânico-Chefe</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alta Mecânica -->
+                <div class="hierarchy-category">
+                    <h3>Alta Mecânica</h3>
+                    <div class="hierarchy-grid">
+                        <div class="rank-card rank-tier-3">
+                            <h4>Encarregado de Oficina</h4>
+                        </div>
+                        <div class="rank-card rank-tier-3">
+                            <h4>Supervisor da Mecânica</h4>
+                        </div>
+                        <div class="rank-card rank-tier-3">
+                            <h4>Mecânico Master</h4>
+                        </div>
+                        <div class="rank-card rank-tier-3">
+                            <h4>Líder de Mecânica</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gestão -->
+                <div class="hierarchy-category">
+                    <h3>Gestão</h3>
+                    <div class="hierarchy-grid">
+                        <div class="rank-card rank-tier-2">
+                            <h4>Supervisor de Plantão</h4>
+                        </div>
+                        <div class="rank-card rank-tier-2">
+                            <h4>Gerente da Mecânica</h4>
+                        </div>
+                        <div class="rank-card rank-tier-2">
+                            <h4>Subgerente</h4>
+                        </div>
+                        <div class="rank-card rank-tier-2">
+                            <h4>Supervisor Geral</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Executivo -->
+                <div class="hierarchy-category">
+                    <h3>Executivo</h3>
+                    <div class="hierarchy-grid">
+                        <div class="rank-card rank-tier-1">
+                            <h4>Diretor Administrativo</h4>
+                        </div>
+                        <div class="rank-card rank-tier-1">
+                            <h4>Gerente Geral</h4>
+                        </div>
+                        <div class="rank-card rank-tier-1">
+                            <h4>Diretor Auxiliar</h4>
+                        </div>
+                        <div class="rank-card rank-tier-1">
+                            <h4>Sócio Executivo</h4>
+                        </div>
+                        <div class="rank-card rank-tier-1">
+                            <h4>Executivo</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. REGRAS HIERÁRQUICAS -->
+    <section id="regras-hierarquicas" class="section">
+        <div id="regras"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Regras Hierárquicas</h2>
+                <p>Nossa fundação de disciplina e organização corporativa</p>
+            </div>
+
+            <div class="card" style="max-width: 900px; margin: 0 auto;">
+                <ul class="clean-list">
+                    <li>
+                        <i class="ph ph-shield-chevron text-orange mr-2"></i>
+                        <div><strong>Respeitar Superiores:</strong> É estritamente obrigatório o respeito absoluto à
+                            cadeia de comando em todas as situações. As ordens e decisões da chefia e superiores são
+                            incontestáveis.</div>
+                    </li>
+                    <li>
+                        <i class="ph ph-warning text-orange mr-2"></i>
+                        <div><strong>Resolver Conflitos com Superior Direto:</strong> Qualquer problema, dúvida ou
+                            intriga deve ser sempre relatado primeiramente ao seu superior imediato para resolução
+                            correta.</div>
+                    </li>
+                    <li>
+                        <i class="ph ph-trend-up text-orange mr-2"></i>
+                        <div><strong>Promoções Baseadas em Mérito:</strong> O avanço de cargo é fundamentado unicamente
+                            na sua atividade em serviço, alto comprometimento e na confiança mútua firmada com a gestão.
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ph ph-prohibit text-orange mr-2"></i>
+                        <div><strong>Punições por Desvio de Conduta:</strong> Casos de desrespeito a superiores ou
+                            atitudes que causem desorganização no ambiente de trabalho resultarão em severas punições,
+                            rebaixamentos ou demissão direta.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. REGRAS GERAIS -->
+    <section id="regras-gerais" class="section bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2>Diretrizes de Conduta e Regras Gerais</h2>
+                <p>Como devemos operar dentro e fora da base</p>
+            </div>
+
+            <div class="card" style="max-width: 900px; margin: 0 auto; padding: 40px;">
+                <div class="grid-2" style="gap: 40px;">
+                    <div>
+                        <div class="rule-block">
+                            <h4><i class="ph-fill ph-check-circle text-orange mr-2"></i> Respeito Mútuo</h4>
+                            <p>Manter o absoluto respeito constante entre membros da equipe e de forma passiva com
+                                nossos clientes.</p>
+                        </div>
+                        <div class="rule-block">
+                            <h4><i class="ph-fill ph-check-circle text-orange mr-2"></i> Ordem de Chegada</h4>
+                            <p>Todo atendimento preventivo e reparo deve seguir incondicionalmente a ordem natural de
+                                chegada.</p>
+                        </div>
+                        <div class="rule-block">
+                            <h4><i class="ph-fill ph-check-circle text-orange mr-2"></i> Não Bloquear Entrada</h4>
+                            <p>Proibido manter veículos abandonados obstruindo a portaria principal ou espalhados na
+                                área de manobra.</p>
+                        </div>
+                        <div class="rule-block">
+                            <h4><i class="ph-fill ph-check-circle text-orange mr-2"></i> Veículos Só Para Serviço</h4>
+                            <p>Guinchos e carros corporativos são liberados exclusivamente para executar as funções e
+                                chamados da empresa.</p>
+                        </div>
+                        <div class="rule-block" style="margin-bottom: 0;">
+                            <h4><i class="ph-fill ph-check-circle text-orange mr-2"></i> Não Iniciar Brigas</h4>
+                            <p>Evite altercações a todo custo. Em instâncias abusivas por parte do cliente, afaste-se e
+                                contacte sua supervisão.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rule-block">
+                            <h4><i class="ph-fill ph-check-circle text-orange mr-2"></i> Justificar Ausência</h4>
+                            <p>Toda inatividade prolongada ou impossibilidade de prestação de serviço precisa ser
+                                avisada na aba de justificativas.</p>
+                        </div>
+                        <div class="rule-block">
+                            <h4><i class="ph-fill ph-check-circle text-orange mr-2"></i> Usar MEC| no Nick</h4>
+                            <p>Como marca visual obrigatória da organização, o membro deve usar a prefixação
+                                <code>MEC |</code> em seu nome in-game.
+                            </p>
+                        </div>
+                        <div class="rule-block">
+                            <h4><i class="ph-fill ph-check-circle text-orange mr-2"></i> Regras de Desmanche</h4>
+                            <p>Respeitar a integridade da divisão de dinheiro ilegal do galpão e obedecer os repasses
+                                conforme combinado in-game.</p>
+                        </div>
+                        <div class="rule-block" style="margin-bottom: 0;">
+                            <h4><i class="ph-fill ph-check-circle text-orange mr-2"></i> Proibir Abuso de Arma</h4>
+                            <p>Absolutamente banido iniciar ou engajar-se em crimes no recinto, praticar RDM, ou abusar
+                                de armamentos fardado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- VIEW: OPERACAO -->
+    <div id="view-operacao" class="view terminal-mode">
+    <!-- 6. COMANDOS -->
+    <section id="comandos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comandos Operacionais</h2>
+                <p>Guia de sistema in-game</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card glow-border">
+                    <h3 class="mb-4 text-orange">Interface de Comandos Oficiais</h3>
+                    <ul class="cmd-list">
+                        <li>
+                            <code>/reparar</code>
+                            <div class="text-sm">Comando essencial para iniciar a verificação e o conserto completo
+                                (motor e funilaria) do veículo na base.</div>
+                        </li>
+                        <li>
+                            <code>/aceitarorc</code>
+                            <div class="text-sm">Utilizado na finalização de customizações e serviços de tunagem
+                                veicular via orçamento, faturando o custo das atualizações.</div>
+                        </li>
+                        <li>
+                            <code>/skinmec1</code> <span
+                                style="color: var(--clr-primary); font-weight: bold; margin-left: 10px; font-size: 0.9rem;">»
+                                Skin Masculina</span>
+                            <div class="text-sm" style="margin-top: 5px;">Equipa imediatamente o profissional da oficina
+                                com toda a indumentária oficial masculina para iniciar os trabalhos.</div>
+                        </li>
+                        <li>
+                            <code>/skinmec2</code> <span
+                                style="color: var(--clr-primary); font-weight: bold; margin-left: 10px; font-size: 0.9rem;">»
+                                Skin Feminina</span>
+                            <div class="text-sm" style="margin-top: 5px;">Equipa imediatamente a profissional da oficina
+                                com toda a indumentária oficial feminina para iniciar os trabalhos.</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card flex-center flex-col text-center justify-center">
+                    <h3 class="mb-4">Mídia de Treinamento</h3>
+                    <p class="text-sm text-dim mb-4">Veja na prática como operar os painéis mecânicos sem errar a
+                        precificação.</p>
+
+                    <div class="video-placeholder"
+                        style="width: 100%; aspect-ratio: 16/9; background: #000; border: 2px dashed rgba(255,107,0,0.3); display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span class="text-dim"><i class="ph ph-play-circle font-xl"></i><br>Vídeo Tutorial Em
+                            Breve</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. DESMANCHE -->
+    <section id="desmanche" class="section bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: #ff3333; text-shadow: 0 0 15px rgba(255,50,50,0.4);">Operações de Desmanche</h2>
+                <p>Regras exclusivas da desmontagem ilegal paralela</p>
+            </div>
+
+            <div class="card" style="border: 1px solid rgba(255,50,50,0.4);">
+                <div class="highlight-box mb-4 text-center"
+                    style="background: rgba(255,0,0,0.1); border-left-color: #ff3333;">
+                    <i class="ph-fill ph-warning font-xl" style="color: #ff3333;"></i><br>
+                    <strong>A Função do Sistema:</strong><br>O Desmanche é uma ferramenta corporativa ilícita interna
+                    com o objetivo de gerar capital através da diluição controlada de veículos. O mecânico encarregado
+                    opera desmontando com segurança técnica as viaturas providenciadas pelos clientes.
+                </div>
+
+                <div class="dual-sections mb-4">
+                    <div class="rule-item" style="border-left-color: #ff3333;">
+                        <div class="w-full">
+                            <h4 class="mb-2 text-center"
+                                style="border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 10px;">Dinheiro
+                                Sujo</h4>
+                            <p class="text-center font-xl mb-2 mt-2"><strong>70% / 30%</strong></p>
+                            <p class="text-sm text-center text-dim">Ao repassar com capital não lavado: <strong>70% é
+                                    entregue ao Cliente</strong>, enquanto os <strong>30% garantem o lucro do
+                                    Mecânico</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="rule-item" style="border-left-color: #10B981;">
+                        <div class="w-full">
+                            <h4 class="mb-2 text-center"
+                                style="border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 10px;">Dinheiro
+                                Limpo</h4>
+                            <p class="text-center font-xl mb-2 mt-2"><strong>60% / 40%</strong></p>
+                            <p class="text-sm text-center text-dim">Nas operações finalizadas e pagas com depósitos
+                                lavados oficiais: <strong>60% é lucro ao Cliente</strong>, enquanto <strong>40% garante
+                                    os honorários do Mecânico</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- VIEW: SERVIÇOS -->
+    <div id="view-servicos" class="view">
+    <!-- 8. META SEMANAL -->
+    <section id="metas" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cota e Meta Semanal</h2>
+                <p>Controle financeiro do painel corporativo</p>
+            </div>
+
+            <div class="card" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p class="mb-4" style="font-size: 1.1rem; color: var(--clr-text-light);">Efetuar a sua contabilidade
+                    financeira <strong>é uma etapa rigorosamente imperativa para usufruir do salário.</strong></p>
+
+                <div class="grid-2 mb-4 mt-4" style="gap: 20px;">
+                    <div class="meta-card">
+                        <h4>Ingame (Dinheiro do Jogo)</h4>
+                        <div class="meta-val">Depósito de $ 350.000</div>
+                    </div>
+                    <div class="meta-card">
+                        <h4>Opcional (PIX na Vida Real)</h4>
+                        <div class="meta-val">Doação de R$ 2,00</div>
+                    </div>
+                </div>
+
+                <div class="rule-block text-left" style="margin-top: 30px; margin-bottom: 0;">
+                    <h4><i class="ph-fill ph-discord-logo text-orange mr-2"></i> Comprovação no Discord</h4>
+                    <p>Tanto o depósito gerado in-game quanto doações PIX precisam obrigatoriamente apresentar recibos
+                        concretos e imagens protocoladas nos canais privados online do Discord.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. SALÁRIOS -->
+    <section id="salarios" class="section bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sistema de Salários</h2>
+                <p>Liberação orçamentária do RH as sextas-feiras</p>
+            </div>
+
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <p class="mb-4 text-center text-lg">Seus honorários semanais na empresa de mecânica <strong>dependem em
+                        totalidade do cargo que você ocupa</strong> internamente no sistema.</p>
+
+                <div class="req-box glow-border">
+                    <h3 class="text-orange text-center mb-4">Requisitos Mandatórios</h3>
+                    <ul class="clean-list">
+                        <li>
+                            <i class="ph-fill ph-clock text-white"></i>
+                            <div><strong>Bater a Meta e Cobrir 5h Básicas:</strong> Antes de qualquer pedido de
+                                faturamento, você precisa apresentar contabilização de no <strong>mínimo 5 horas de
+                                    trabalho</strong>, juntamente com sua meta paga e assinada.</div>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-discord-logo text-white"></i>
+                            <div><strong>Solicitação Via Discord:</strong> Os contrataqueios só são efetivados quando
+                                solicitados por intervenção correta na aba protocolada oficial do canal do aplicativo
+                                oficial de comunicação fechada pela empresa.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. BATE-PONTO E RECOMPENSAS -->
+    <section id="ponto" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bate-Ponto & Oficialização</h2>
+                <p>Controle de tempo logístico e registro integral</p>
+            </div>
+
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <div class="grid-2 mb-4">
+                    <div class="rule-item" style="border-left-color: #4A90E2;">
+                        <div class="w-full">
+                            <h4 class="mb-2 text-center text-white"><i class="ph ph-desktop mr-2"></i> Discord + In-game
+                            </h4>
+                            <p class="text-sm">A sua entrada na batida requer operação híbrida: o trabalhador deve
+                                enviar os arquivos ao vivo no servidor digital acompanhado também do registro in-game
+                                nas chaves eletrônicas do pátio da firma.</p>
+                        </div>
+                    </div>
+                    <div class="rule-item" style="border-left-color: var(--clr-primary);">
+                        <div class="w-full">
+                            <h4 class="mb-2 text-center text-white"><i class="ph ph-clock mr-2"></i> Mínimo de 5h</h4>
+                            <p class="text-sm">Todo seu expediente requer o absoluto registro de horas sem interrupções
+                                suspeitas, alinhando um teto imperativo mínimo de 5h semanais operando formalmente os
+                                balcões e guinchos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box" style="background: rgba(241, 196, 15, 0.1); border-left-color: #f1c40f;">
+                    <div
+                        style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                        <i class="ph-fill ph-trophy font-xl mb-2" style="color: #f1c40f; font-size: 4rem;"></i>
+                        <div style="text-align: left; max-width: 500px;">
+                            <strong
+                                style="color: #f1c40f; font-size: 1.2rem; display: block; margin-bottom: 5px;">Ranking
+                                Semanal do Painel</strong>
+                            Encorajamos nossa base paramilitar criando o Ranking. Acumule tempo íntegro! É deferido
+                            automaticamente um <strong>bônus de $ 200.000 para o primeiro lugar</strong> coroado em
+                            desempenho nas viradas de prazo oficial.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. ÁREA DE SERVIÇOS (Mocks / Forms Visuais) -->
+    <section id="servicos" class="section bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2>Serviços Internos</h2>
+                <p>Área burocrática e ferramentas de operações corporativas</p>
+            </div>
+
+            <div class="service-tabs">
+                <button class="tab-btn active" data-tab="tab-pagamento">
+                    <i class="ph ph-wallet mr-2"></i> Solicitar Pagamento
+                </button>
+                <button class="tab-btn" data-tab="tab-horas">
+                    <i class="ph ph-clock mr-2"></i> Compra de Horas
+                </button>
+                <button class="tab-btn" data-tab="tab-cargo">
+                    <i class="ph ph-trend-up mr-2"></i> Compra de Cargo
+                </button>
+            </div>
+
+            <div class="forms-wrapper">
+
+                <!-- TAB 1: SOLICITAR PAGAMENTO -->
+                <div class="form-panel active" id="tab-pagamento">
+                    <h3>Solicitar Pagamento</h3>
+                    <p class="text-dim">Validação de ticket salarial corporativo. Certifique-se de ter cumprido a carga
+                        horária.</p>
+                    <form class="bmi-form" id="form-pagamento" action="#" method="POST" novalidate>
+                        <input type="hidden" name="Tipo" value="💳 SOLICITAÇÃO DE PAGAMENTO">
+                        <div class="grid-2" style="gap:15px">
+                            <div class="input-group" style="margin-bottom:0;">
+                                <label>Seu Nome Oficial</label>
+                                <input type="text" name="Nome" placeholder="Ex: Fenix" required>
+                            </div>
+                            <div class="input-group" style="margin-bottom:0;">
+                                <label>Seu ID na Cidade</label>
+                                <input type="number" name="ID_Cidade" placeholder="Passaporte numérico" required>
+                            </div>
+                        </div>
+                        <div class="input-group mt-3">
+                            <label>ID do Discord</label>
+                            <input type="text" name="ID_Discord" placeholder="Ex: fenix#1234" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Cargo Desempenhado</label>
+                            <select id="pagamento-cargo" name="Cargo" required>
+                                <option value="" disabled selected>Selecionar o seu cargo...</option>
+                                <option value="Executivo" data-salario="$ 2.000.000">Executivo</option>
+                                <option value="Sócio Executivo" data-salario="$ 1.700.000">Sócio Executivo</option>
+                                <option value="Diretor Administrativo" data-salario="$ 1.290.000">Diretor Administrativo
+                                </option>
+                                <option value="Gerente Geral" data-salario="$ 1.150.000">Gerente Geral</option>
+                                <option value="Diretor Auxiliar" data-salario="$ 950.000">Diretor Auxiliar</option>
+                                <option value="Gerente Da Mecânica" data-salario="$ 820.000">Gerente Da Mecânica
+                                </option>
+                                <option value="SubGerente" data-salario="$ 780.000">SubGerente</option>
+                                <option value="Supervisor Geral" data-salario="$ 740.000">Supervisor Geral</option>
+                                <option value="Supervisor De Plantão" data-salario="$ 700.000">Supervisor De Plantão
+                                </option>
+                                <option value="Líder Mecânica" data-salario="$ 670.000">Líder Mecânica</option>
+                                <option value="Mecânica Master" data-salario="$ 620.000">Mecânica Master</option>
+                                <option value="Supervisor Da Mecânica" data-salario="$ 570.000">Supervisor Da Mecânica
+                                </option>
+                                <option value="Encarregado De Oficina" data-salario="$ 520.000">Encarregado De Oficina
+                                </option>
+                                <option value="Mecânico Chefe" data-salario="$ 460.000">Mecânico Chefe</option>
+                                <option value="Mecânico" data-salario="$ 420.000">Mecânico</option>
+                                <option value="Mecânico Sênior" data-salario="$ 380.000">Mecânico Sênior</option>
+                                <option value="Mecânico Automotivo" data-salario="$ 340.000">Mecânico Automotivo
+                                </option>
+                                <option value="Mecânico De Manutenção" data-salario="$ 300.000">Mecânico De Manutenção
+                                </option>
+                                <option value="Mecânico Auxiliar" data-salario="$ 260.000">Mecânico Auxiliar</option>
+                                <option value="Mecânico Junior" data-salario="$ 220.000">Mecânico Junior</option>
+                                <option value="Mecânico Estagiário" data-salario="$ 180.000">Mecânico Estagiário
+                                </option>
+                                <option value="Aprendiz Mecânica" data-salario="$ 150.000">Aprendiz Mecânica</option>
+                            </select>
+                        </div>
+                        <div class="input-group" style="margin-bottom: 25px;">
+                            <label>Salário Referente ao Cargo Selecionado</label>
+                            <input type="text" id="pagamento-salario" name="Salario_Do_Cargo"
+                                placeholder="O sistema calculará automaticamente..."
+                                style="background: rgba(0,0,0,0.6); pointer-events: none; border-style: dashed;"
+                                readonly>
+                        </div>
+                        <div class="grid-2" style="gap:15px">
+                            <div class="input-group" style="margin-bottom:0;">
+                                <label>Horário que quer receber</label>
+                                <input type="time" name="Horario_Recebimento" required>
+                            </div>
+                            <div class="input-group" style="margin-bottom:0;">
+                                <label>Data da Meta Financeira</label>
+                                <input type="date" name="Data_Meta" required>
+                            </div>
+                        </div>
+                        <div class="input-group mt-3">
+                            <label>Bônus Acumulado (Opcional)</label>
+                            <input type="text" name="Bonus" placeholder="Ex: Top 1 do Ranking Semanal">
+                        </div>
+
+                        <div class="status-box text-center mb-3 mt-4 text-dim font-bold" id="status-pagamento">
+                            Status: Aguardando envio...
+                        </div>
+                        <button type="submit" class="btn-primary w-full">Enviar Solicitação</button>
+                    </form>
+                </div> <!-- Fim TAB 1 -->
+
+                <!-- TAB 2: COMPRA DE HORAS -->
+                <div class="form-panel hidden" id="tab-horas">
+                    <h3>Compra de Horas Subscritas</h3>
+                    <p class="text-dim">Pague folgas pendentes em PIX baseando-se na cotação temporal oficial.</p>
+                    <form class="bmi-form" id="form-horas" action="#" method="POST" enctype="multipart/form-data"
+                        novalidate>
+                        <input type="hidden" name="Tipo" value="⏳ COMPRA DE HORAS">
+                        <div class="grid-2" style="gap:15px">
+                            <div class="input-group" style="margin-bottom:0;">
+                                <label>Seu ID</label>
+                                <input type="number" name="ID" placeholder="Ex: 51" required>
+                            </div>
+                            <div class="input-group" style="margin-bottom:0;">
+                                <label>ID do Discord</label>
+                                <input type="text" name="Discord" placeholder="Ex: dev_fenix" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group mt-3">
+                            <label>Quantidade de Horas Restantes (Faltando)</label>
+                            <input type="number" id="horas-input" name="Quantidade_Horas" min="1"
+                                placeholder="Quantas horas deseja suprir?" required>
+                        </div>
+
+                        <!-- Calculadora Dinamica Horas -->
+                        <div class="card mb-4 text-center glow-border"
+                            style="background: rgba(255,107,0,0.05); padding: 15px; border-radius: 8px;">
+                            <span class="text-dim text-sm block mb-1">Cotação Padrão: 1 hora = R$ 1,00 PIX</span>
+                            <div class="font-bold font-xl text-orange">Valor Total a Pagar: <span id="horas-total">R$
+                                    0,00</span></div>
+                            <input type="hidden" id="horas-total-hidden" name="Valor_Pix_A_Pagar">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Identifique Sua Forma de Pagamento</label>
+                            <select id="horas-pagamento-metodo" name="Metodo_Escolhido" required>
+                                <option value="" disabled selected>Como deseja efetuar o pagamento?</option>
+                                <option value="PIX">Dinheiro VIP (PIX)</option>
+                                <option value="IN_GAME">Grana Suja / Suada (In-Game)</option>
+                            </select>
+                        </div>
+
+                        <!-- Sub UI PIX (Horas) -->
+                        <div id="horas-pix-ui" class="hidden card mb-4"
+                            style="padding: 20px; background: rgba(0,0,0,0.4);">
+                            <div class="input-group" style="margin-bottom: 20px;">
+                                <label style="color:var(--clr-primary);">Opção PIX</label>
+                                <select id="horas-opcao-pix">
+                                    <option value="" disabled selected>Escolha como vai pagar via PIX...</option>
+                                    <option value="COPIA_COLA">PIX Copia e Cola / Chave</option>
+                                    <option value="QR_CODE">Escaneamento QR Code (App)</option>
+                                </select>
+                            </div>
+
+                            <!-- Toggle Copia Cola -->
+                            <div id="horas-pix-copia" class="hidden" style="margin-bottom: 20px;">
+                                <h4 class="mb-3 text-center text-sm" style="color:var(--clr-text-light);">Pagar via
+                                    Chave PIX</h4>
+                                <div style="display: flex; gap: 10px;">
+                                    <!-- INSIRA SUA CHAVE PIX NO VALUE ABAIXO E NO ALERT DO BOTAO -->
+                                    <input type="text" value="BMIpixoficial@gmail.com" readonly
+                                        style="flex-grow:1; width:100%; padding:14px; background:#111; color:#fff; border:1px solid #333; border-radius:6px; cursor:not-allowed;">
+                                    <button type="button" class="btn-outline" style="padding:0 20px;"
+                                        onclick="navigator.clipboard.writeText('BMIpixoficial@gmail.com'); alert('Chave PIX copiada!')">Copiar
+                                        PIX</button>
+                                </div>
+                            </div>
+
+                            <!-- Toggle QR Code -->
+                            <div id="horas-pix-qrcode" class="hidden"
+                                style="margin-bottom: 20px; border:1px dashed #333; padding:15px; text-align:center;">
+                                <p class="text-sm text-dim mb-3">Escaneie o QR Code pelo aplicativo do banco</p>
+                                <!-- Caso você mude o arquivo da imagem, modifique o src abaixo -->
+                                <img src="assets/qrcode/qrcode.jpeg" alt="QR Code Pagamento PIX"
+                                    style="max-width: 200px; border-radius: 8px; border: 2px solid rgba(255,107,0,0.5); margin: 0 auto; display: block;">
+                            </div>
+
+                            <div class="input-group" style="margin-bottom:0;">
+                                <label style="text-align:center;">Anexar Comprovante do PIX Realizado</label>
+                                <label class="file-upload-block block text-center"
+                                    style="border: 1px dashed rgba(255,107,0,0.5); padding: 15px; border-radius: 8px; cursor: pointer; max-width: 300px; margin: 0 auto; display: block;">
+                                    <span class="block text-dim text-sm mb-2"><i class="ph ph-upload-simple"
+                                            style="font-size: 1.5rem; display: block; margin-bottom: 5px;"></i> Envie
+                                        print, foto ou PDF</span>
+                                    <input type="file" id="horas-comprovante-pix" name="Comprovante_Pix"
+                                        accept="image/*, application/pdf"
+                                        style="width: 100%; max-width: 250px; margin: 0 auto; color: var(--clr-text-light); display:block;">
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Sub UI IN GAME (Horas) -->
+                        <div id="horas-ig-ui" class="hidden card mb-4"
+                            style="padding: 20px; background: rgba(0,0,0,0.4);">
+                            <h4 class="mb-3 text-center text-sm" style="color:var(--clr-text-light);">Pagar no Baú da
+                                Facção</h4>
+                            <div class="input-group" style="margin-bottom:0;">
+                                <label>Anexar Comprovante Bancário/Mochila (In-Game)</label>
+                                <label class="file-upload-block block text-center"
+                                    style="border: 1px dashed rgba(255,107,0,0.5); padding: 15px; border-radius: 8px; cursor: pointer;">
+                                    <span class="block text-dim text-sm mb-2"><i class="ph ph-upload-simple"
+                                            style="font-size: 1.5rem; display: block; margin-bottom: 5px;"></i> Envie
+                                        print, foto ou PDF</span>
+                                    <input type="file" id="horas-comprovante-ig" name="Comprovante_IG"
+                                        accept="image/*, application/pdf"
+                                        style="width: 100%; max-width: 250px; margin: 0 auto; color: var(--clr-text-light);">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Quem Vendeu?</label>
+                            <input type="text" name="Quem_Vendeu" placeholder="Oficial que atendeu seu pedido" required>
+                        </div>
+
+                        <div class="status-box text-center mb-3 mt-4 text-dim font-bold" id="status-horas">
+                            Status: Aguardando envio...
+                        </div>
+                        <button type="submit" class="btn-primary w-full">Enviar Solicitação</button>
+                    </form>
+                </div> <!-- Fim TAB 2 -->
+
+
+                <!-- TAB 3: COMPRA DE CARGO -->
+                <div class="form-panel hidden" id="tab-cargo">
+                    <h3>Aquisição Administrativa de Patente</h3>
+                    <p class="text-dim">Cálculo inteligente entre economia In-Game e sistema VIP via PIX da organização.
+                    </p>
+                    <form class="bmi-form" id="form-cargo" action="#" method="POST" enctype="multipart/form-data"
+                        novalidate>
+                        <input type="hidden" name="Tipo" value="⭐ ATUALIZAÇÃO / COMPRA DE PATENTE">
+                        <div class="grid-2" style="gap:15px">
+                            <div class="input-group" style="margin-bottom:0;">
+                                <label>Seu ID</label>
+                                <input type="number" name="ID" placeholder="Ex: 51" required>
+                            </div>
+                            <div class="input-group" style="margin-bottom:0;">
+                                <label>ID do Discord</label>
+                                <input type="text" name="Discord" placeholder="Ex: fenix" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group mt-3">
+                            <label>Cargo Desejado</label>
+                            <select id="cargo-selecionado" name="Cargo_Comprado" required>
+                                <option value="" disabled selected>Selecionar patente de destino...</option>
+                                <option value="Mecânico Junior" data-ig="700.000" data-pix="5">Mecânico Junior</option>
+                                <option value="Mecânico Auxiliar" data-ig="800.000" data-pix="6">Mecânico Auxiliar
+                                </option>
+                                <option value="Mecânico de Manutenção" data-ig="900.000" data-pix="9">Mecânico de
+                                    Manutenção</option>
+                                <option value="Mecânico Automotivo" data-ig="1.000.000" data-pix="8">Mecânico Automotivo
+                                </option>
+                                <option value="Mecânico Sênior" data-ig="1.500.000" data-pix="9">Mecânico Sênior
+                                </option>
+                                <option value="Mecânico" data-ig="2.000.000" data-pix="10">Mecânico</option>
+                                <option value="Mecânico Chefe" data-ig="2.700.000" data-pix="12">Mecânico Chefe</option>
+                                <option value="Encarregado de Oficina" data-ig="3.000.000" data-pix="14">Encarregado de
+                                    Oficina</option>
+                                <option value="Supervisor da Mecânica" data-ig="3.700.000" data-pix="16">Supervisor da
+                                    Mecânica</option>
+                                <option value="Mecânico Master" data-ig="4.200.000" data-pix="18">Mecânico Master
+                                </option>
+                                <option value="Líder da Mecânica" data-ig="5.000.000" data-pix="20">Líder da Mecânica
+                                </option>
+                            </select>
+                        </div>
+
+                        <label class="mb-2 block font-bold text-sm text-dim">Cupom de Desconto de Padrim</label>
+                        <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                            <input type="text" id="cupom-cargo-input" name="Cupom_Utilizado"
+                                placeholder="Código (Opcional)"
+                                style="flex-grow:1; width:100%; padding: 14px; border-radius: 8px; border: 1px solid rgba(255,107,0,0.3); background: rgba(0,0,0,0.4); color: white;">
+                            <button type="button" id="btn-aplicar-cupom" class="btn-outline"
+                                style="padding: 0 25px;">Aplicar</button>
+                        </div>
+                        <div id="cupom-msg" class="text-sm text-dim mb-3" style="margin-top: -10px;">Nenhum desconto
+                            inserido...</div>
+
+                        <!-- Calculadora Cargo -->
+                        <div class="card mb-4 glow-border text-center"
+                            style="background: rgba(255,107,0,0.05); padding: 15px; border-radius: 8px;">
+                            <div class="grid-2">
+                                <div>
+                                    <span class="text-dim text-sm block">Valor do Cargo (In-game)</span>
+                                    <span id="preco-ig" class="font-bold text-lg text-white">Consulte Acima</span>
+                                    <input type="hidden" id="preco-ig-hidden" name="Valor_Final_IG">
+                                </div>
+                                <div style="border-left: 1px dashed rgba(255,255,255,0.1);">
+                                    <span class="text-dim text-sm block">Valor do Cargo (Vida Real)</span>
+                                    <span id="preco-pix" class="font-bold text-lg text-orange">R$ 0,00</span>
+                                    <input type="hidden" id="preco-pix-hidden" name="Valor_Final_Pix">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Identifique Sua Forma de Pagamento</label>
+                            <select id="cargo-pagamento-metodo" name="Metodo_Escolhido" required>
+                                <option value="" disabled selected>Como deseja efetuar a transação?</option>
+                                <option value="PIX">Dinheiro VIP (PIX)</option>
+                                <option value="IN_GAME">Grana Suja / Suada (In-Game)</option>
+                            </select>
+                        </div>
+
+                        <!-- Sub UI PIX (Cargo) -->
+                        <div id="cargo-pix-ui" class="hidden card mb-4"
+                            style="padding: 20px; background: rgba(0,0,0,0.4);">
+                            <div class="input-group" style="margin-bottom: 20px;">
+                                <label style="color:var(--clr-primary);">Opção PIX</label>
+                                <select id="cargo-opcao-pix">
+                                    <option value="" disabled selected>Escolha como vai pagar via PIX...</option>
+                                    <option value="COPIA_COLA">PIX Copia e Cola / Chave</option>
+                                    <option value="QR_CODE">Escaneamento QR Code (App)</option>
+                                </select>
+                            </div>
+
+                            <!-- Toggle Copia Cola -->
+                            <div id="cargo-pix-copia" class="hidden" style="margin-bottom: 20px;">
+                                <h4 class="mb-3 text-center text-sm" style="color:var(--clr-text-light);">Pagar via
+                                    Chave PIX</h4>
+                                <div style="display: flex; gap: 10px;">
+                                    <!-- INSIRA SUA CHAVE PIX NO VALUE ABAIXO E NO ALERT DO BOTAO -->
+                                    <input type="text" value="BMIpixoficial@gmail.com" readonly
+                                        style="flex-grow:1; width:100%; padding:14px; background:#111; color:#fff; border:1px solid #333; border-radius:6px; cursor:not-allowed;">
+                                    <button type="button" class="btn-outline" style="padding:0 20px;"
+                                        onclick="navigator.clipboard.writeText('BMIpixoficial@gmail.com'); alert('PIX Copiado!')">Copiar
+                                        PIX</button>
+                                </div>
+                            </div>
+
+                            <!-- Toggle QR Code -->
+                            <div id="cargo-pix-qrcode" class="hidden"
+                                style="margin-bottom: 20px; border:1px dashed #333; padding:15px; text-align:center;">
+                                <p class="text-sm text-dim mb-3">Escaneie o QR Code pelo aplicativo do banco</p>
+                                <!-- Caso você mude o arquivo da imagem, modifique o src abaixo -->
+                                <img src="assets/qrcode/qrcode.jpeg" alt="QR Code Pagamento PIX"
+                                    style="max-width: 200px; border-radius: 8px; border: 2px solid rgba(255,107,0,0.5); margin: 0 auto; display: block;">
+                            </div>
+
+                            <div class="input-group" style="margin-bottom:0;">
+                                <label style="text-align:center;">Anexar Comprovante do PIX Realizado</label>
+                                <label class="file-upload-block block text-center"
+                                    style="border: 1px dashed rgba(255,107,0,0.5); padding: 15px; border-radius: 8px; cursor: pointer; max-width: 300px; margin: 0 auto; display: block;">
+                                    <span class="block text-dim text-sm mb-2"><i class="ph ph-upload-simple"
+                                            style="font-size: 1.5rem; display: block; margin-bottom: 5px;"></i> Envie
+                                        print, foto ou PDF</span>
+                                    <input type="file" id="cargo-comprovante-pix" name="Comprovante_Pix"
+                                        accept="image/*, application/pdf"
+                                        style="width: 100%; max-width: 250px; margin: 0 auto; color: var(--clr-text-light); display:block;">
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Sub UI IN GAME (Cargo) -->
+                        <div id="cargo-ig-ui" class="hidden card mb-4"
+                            style="padding: 20px; background: rgba(0,0,0,0.4);">
+                            <h4 class="mb-3 text-center text-sm" style="color:var(--clr-text-light);">Pagar no Baú da
+                                Facção</h4>
+                            <div class="input-group" style="margin-bottom:0;">
+                                <label>Anexar Comprovante Bancário/Mochila (In-Game)</label>
+                                <label class="file-upload-block block text-center"
+                                    style="border: 1px dashed rgba(255,107,0,0.5); padding: 15px; border-radius: 8px; cursor: pointer;">
+                                    <span class="block text-dim text-sm mb-2"><i class="ph ph-upload-simple"
+                                            style="font-size: 1.5rem; display: block; margin-bottom: 5px;"></i> Envie
+                                        print, foto ou PDF</span>
+                                    <input type="file" id="cargo-comprovante-ig" name="Comprovante_IG"
+                                        accept="image/*, application/pdf"
+                                        style="width: 100%; max-width: 250px; margin: 0 auto; color: var(--clr-text-light);">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="input-group mt-3">
+                            <label>Assinatura de Quem Vendeu o Cargo</label>
+                            <input type="text" name="Oficial_Vendedor"
+                                placeholder="Nome de quem te operou nesta acensão" required>
+                        </div>
+
+                        <div class="status-box text-center mb-3 mt-4 text-dim font-bold" id="status-cargo">
+                            Status: Aguardando envio...
+                        </div>
+                        <button type="submit" class="btn-primary w-full">Enviar Solicitação</button>
+                    </form>
+                </div> <!-- Fim TAB 3 -->
+
+                <!-- SUCCESSO -->
+                <div class="form-panel form-success hidden" id="form-success-msg">
+                    <i class="ph-fill ph-check-circle text-orange mb-4" style="font-size: 5rem; display: block;"></i>
+                    <h3 class="mt-4 mb-2 text-white font-xl">Protocolo Recebido na Central</h3>
+                    <p class="text-dim mb-4" style="text-align: center;">Os dados desta etapa foram despachados
+                        simultaneamente para os diretores. Em breve as patentes e repasses serão auditados.</p>
+                    <button type="button" class="btn-outline" id="btn-voltar-form" style="width: 100%;">Registrar Outra
+                        Operação</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- VIEW: PARCEIROS -->
+    <div id="view-parceiros" class="view">
+    <!-- 13. PARCEIROS OFICIAIS -->
+    <section id="parceiros" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Parceiros Oficiais</h2>
+                <p>Nossos aliados governamentais, comerciais e alianças estratégicas</p>
+            </div>
+
+            <!-- PARCEIROS INSTITUCIONAIS -->
+            <div class="partners-category">
+                <h3 class="category-title text-orange mb-4 text-center"
+                    style="border-bottom: 1px dashed rgba(255,107,0,0.3); padding-bottom: 10px;">Institucional</h3>
+                <div class="partners-flex">
+                    <!-- Parceiro: Corpo de Bombeiros -->
+                    <!-- Dica: Adicione a classe 'hidden' no card da div abaixo para ocultar este parceiro -->
+                    <div class="partner-card card text-center">
+                        <div class="partner-logo mb-3 flex-center">
+                            <!-- Troque o src abaixo para o caminho correto do logo -->
+                            <img src="assets/parceiros/bombeiros.png" alt="Corpo de Bombeiros"
+                                style="max-height: 70px; object-fit: contain;"
+                                onerror="this.src='',this.alt='Logo Bombeiros'">
+                        </div>
+                        <h4 class="text-white mb-1">Corpo de Bombeiros</h4>
+                        <span class="partner-badge institutional mb-3">Institucional</span>
+                        <p class="text-sm text-dim mb-4 line-height-relaxed" style="flex-grow: 1;">Parceria oficial
+                            vital para a segurança, pronto atendimento em resgates mecânicos e suporte tático de alto
+                            risco.</p>
+                        <a href="#" target="_blank" class="btn-outline btn-sm w-full">Acessar Parceiro</a>
+                    </div>
+
+                    <!-- Parceiro: Polícia Civil -->
+                    <!-- Dica: Adicione a classe 'hidden' no card da div abaixo para ocultar este parceiro -->
+                    <div class="partner-card card text-center">
+                        <div class="partner-logo mb-3 flex-center">
+                            <img src="assets/parceiros/policia_civil.png" alt="Polícia Civil"
+                                style="max-height: 70px; object-fit: contain;"
+                                onerror="this.src='',this.alt='Logo Polícia Civil'">
+                        </div>
+                        <h4 class="text-white mb-1">Polícia Civil</h4>
+                        <span class="partner-badge institutional mb-3">Institucional</span>
+                        <p class="text-sm text-dim mb-4 line-height-relaxed" style="flex-grow: 1;">Cooperação contínua
+                            para vistorias, laudos técnicos avançados e atuação conjunta em infrações veiculares.</p>
+                        <a href="#" target="_blank" class="btn-outline btn-sm w-full">Acessar Parceiro</a>
+                    </div>
+
+                    <!-- Parceiro: SWAT -->
+                    <!-- Dica: Adicione a classe 'hidden' no card da div abaixo para ocultar este parceiro -->
+                    <div class="partner-card card text-center">
+                        <div class="partner-logo mb-3 flex-center">
+                            <img src="assets/parceiros/swat.png" alt="SWAT"
+                                style="max-height: 70px; object-fit: contain;"
+                                onerror="this.src='',this.alt='Logo SWAT'">
+                        </div>
+                        <h4 class="text-white mb-1">SWAT</h4>
+                        <span class="partner-badge institutional mb-3">Institucional</span>
+                        <p class="text-sm text-dim mb-4 line-height-relaxed" style="flex-grow: 1;">Manutenção
+                            prioritária especializada de blindados e frota de interceptação da força de resposta rápida.
+                        </p>
+                        <a href="#" target="_blank" class="btn-outline btn-sm w-full">Acessar Parceiro</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARCEIROS COMERCIAIS -->
+            <div class="partners-category mt-4" style="padding-top: 2rem;">
+                <h3 class="category-title text-orange mb-4 text-center"
+                    style="border-bottom: 1px dashed rgba(255,107,0,0.3); padding-bottom: 10px;">Comercial</h3>
+                <div class="partners-flex">
+                    <!-- Parceiro: Z! Store -->
+                    <!-- Dica: Adicione a classe 'hidden' no card da div abaixo para ocultar este parceiro -->
+                    <div class="partner-card card text-center">
+                        <div class="partner-logo mb-3 flex-center">
+                            <img src="assets/parceiros/z_store.png" alt="Z! Store"
+                                style="max-height: 70px; object-fit: contain;"
+                                onerror="this.src='',this.alt='Logo Z! Store'">
+                        </div>
+                        <h4 class="text-white mb-1">Z! Store</h4>
+                        <span class="partner-badge commercial mb-3">Comercial</span>
+                        <p class="text-sm text-dim mb-4 line-height-relaxed" style="flex-grow: 1;">Nossa principal
+                            fornecedora corporativa e apoiadora oficial em suprimentos logísticos e grandes promoções no
+                            varejo.</p>
+                        <a href="#" target="_blank" class="btn-outline btn-sm w-full">Acessar Parceiro</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARCEIROS DE ALIANÇA / FACÇÃO -->
+            <div class="partners-category mt-4" style="padding-top: 2rem; margin-bottom: 0;">
+                <h3 class="category-title text-orange mb-4 text-center"
+                    style="border-bottom: 1px dashed rgba(255,107,0,0.3); padding-bottom: 10px;">Aliança / Facção</h3>
+                <div class="partners-flex">
+                    <!-- Parceiro: 4M -->
+                    <!-- Dica: Adicione a classe 'hidden' no card da div abaixo para ocultar este parceiro -->
+                    <div class="partner-card card text-center glow-border" style="border-color: rgba(255,50,50,0.4);">
+                        <div class="partner-logo mb-3 flex-center">
+                            <img src="assets/parceiros/4m.png" alt="4M" style="max-height: 70px; object-fit: contain;"
+                                onerror="this.src='',this.alt='Logo 4M'">
+                        </div>
+                        <h4 class="text-white mb-1">4M</h4>
+                        <span class="partner-badge faction mb-3">Aliança</span>
+                        <p class="text-sm text-dim mb-4 line-height-relaxed" style="flex-grow: 1;">Tratado de aliança
+                            incondicional no submundo para suporte estratégico, circulação de peças e suporte logístico.
+                        </p>
+                        <a href="#" target="_blank" class="btn-outline btn-sm w-full"
+                            style="border-color: rgba(255,50,50,0.5); color: #ff3333;">Acessar Parceiro</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    </div>
+
+    <!-- VIEW: RECRUTAMENTO -->
+    <div id="view-recrutamento" class="view">
+        <section class="section recruit-section">
+            <div class="container text-center">
+                <i class="ph-fill ph-users-three text-orange mb-4" style="font-size: 5rem;"></i>
+                <h2 class="font-xl mb-3">Junte-se à Mecânica BMI</h2>
+                <p class="text-dim mb-4 max-w-600 mx-auto" style="max-width: 600px; margin: 0 auto;">Estamos sempre em busca dos melhores profissionais de Los Santos. Se você sabe operar sob pressão, conhece as peças de cor e tem lealdade à equipe, seu lugar é com a gente.</p>
+                <div class="card glow-border" style="max-width: 500px; margin: 30px auto; padding: 40px;">
+                    <h3 class="mb-3 text-orange">Requisitos Iniciais</h3>
+                    <ul class="clean-list text-left mb-4">
+                        <li><i class="ph ph-check text-orange mr-2"></i> Passaporte limpo ou em regularização</li>
+                        <li><i class="ph ph-check text-orange mr-2"></i> Disponibilidade mínima de 5h diárias</li>
+                        <li><i class="ph ph-check text-orange mr-2"></i> Mais de 16 anos (OOC) e microfone bom</li>
+                        <li><i class="ph ph-check text-orange mr-2"></i> Conhecimento básico em RP automotivo</li>
+                    </ul>
+                    <a href="https://discord.gg/vDZvtrs8Ff" target="_blank" class="btn-primary w-full">Fazer Entrevista no Discord</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- VIEW: MIDIA -->
+    <div id="view-midia" class="view">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Rádio e Mídia</h2>
+                    <p>Mural de momentos e batidas sonoras da garagem</p>
+                </div>
+                
+                <div class="card text-center mb-4 glow-border" style="padding: 50px;">
+                    <i class="ph-fill ph-speaker-hifi text-orange mb-3" style="font-size: 4rem;"></i>
+                    <h3 class="mb-2">Sistema HUD de Rádio Ativo</h3>
+                    <p class="text-dim mb-4">Você pode escutar a nossa trilha oficial através do painel hud no canto inferior de sua tela durante toda a sua navegação corporativa.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FAQ vai pro view-servicos no fim ou inicio -->
+    <!-- Na verdade, pra fechar corretamente a Main Content: -->
+    <!-- Eu simplesmente fecho a view midia, e vou jogar a section do footer original lá no fundo -->
+    
+    <div id="view-placeholder-faq" class="hidden">
+    <!-- 14. FAQ -->
+    <section id="faq" class="section bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2>FAQ Rápido e Frequente</h2>
+                <p>O tira teima antes de incomodar dono da garagem.</p>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">Posso usar qualquer carro guincho até para dar uma carona e farmar?<i
+                            class="ph ph-caret-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Totalmente proibido! Veículos atrelados ao baú da mecânica são restritos <strong>só para
+                                serviços oficiais da nossa empresa</strong> e manutenção.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Qual a regrinha mágica dos orçamentos para o mecânico ganhar grana em
+                        cima da custom da loja?<i class="ph ph-caret-down"></i></button>
+                    <div class="faq-answer">
+                        <p>No comando <code>/aceitarorc</code>, você sempre deve imputar o painel para cobrar
+                            precisamente os <strong>20% a mais</strong> para si mesmo, somados em base sobre toda soma
+                            do mod ou tinta ou motorização daquele carrão.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Quero Desmanchar três carros hoje, meu amigo não entrou mas posso
+                        convidar o colega do meu lado pra pegar a marreta junto pra racharmos?<i
+                            class="ph ph-caret-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Não e jamais. Dois mecânicos juntos nunca podem desmanchar um mesmo único carro; o trabalho
+                            deve ser independente. Seu colega só pode atuar no do lado dele em outro carro em separado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. FOOTER / CONTATO / DISCORD -->
+        </div> <!-- Fecha <main class="main-content"> -->
+    
+    <!-- RADIO HUD (FIXO NA TELA) -->
+    <div id="radio-hud" class="radio-hud">
+        <div class="radio-info">
+            <div class="radio-thumbnail">
+                <i class="ph-fill ph-music-notes"></i>
+            </div>
+            <div class="radio-text">
+                <span class="radio-title">Rádio BMI FM</span>
+                <span class="radio-status text-dim" id="radio-status">Pronto para Tocar</span>
+            </div>
+        </div>
+        <div class="radio-controls">
+            <!-- AUDIO PLAYER INVISIVEL (Base via JS) -->
+            <audio id="audio-player" loop>
+                <!-- URL ESTÁTICA LOCAL/WEB PARA TESTE -->
+                <source src="https://cdn.pixabay.com/download/audio/2022/02/10/audio_f5ebdbf9a9.mp3?filename=trap-beat-1-102219.mp3" type="audio/mpeg">
+                Seu navegador não suporta o arquivo de áudio.
+            </audio>
+            <button id="btn-play-pause" class="btn-radio"><i class="ph-fill ph-play"></i></button>
+            <div class="volume-container">
+                <i class="ph-fill ph-speaker-high" id="btn-mute"></i>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+            </div>
+        </div>
+    </div>
+    
+</div> <!-- Fecha App Container -->
+
+    <!-- App JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

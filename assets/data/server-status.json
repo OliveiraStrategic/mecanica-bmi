@@ -1,0 +1,9 @@
+{
+  "online": true,
+  "hostname": "Brasil Mundo Imperial",
+  "clients": 166,
+  "sv_maxclients": 1024,
+  "economy": "Hard / Realista",
+  "connectCommand": "connect 51.81.94.230:22023",
+  "connectLink": "mtasa://51.81.94.230:22023"
+}

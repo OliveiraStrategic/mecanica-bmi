@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Internos | Mecânica BMI</title>
+    
+    <meta name="description" content="Central burocrática, portabilidade de pagamentos e justificativas da equipe da organização.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+    <!-- HEADER GLOBAL -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <a href="index.html">
+                <img src="assets/logo/logo sem fundo.png" alt="BMI Logo">
+            </a>
+        </div>
+        
+        <div class="nav-links" id="nav-links">
+            <a href="index.html" class="nav-link">Início</a>
+            <a href="mecanica.html" class="nav-link">A Mecânica</a>
+            <a href="operacao.html" class="nav-link">Operação</a>
+            <a href="servicos.html" class="nav-link active">Serviços</a>
+            <a href="parceiros.html" class="nav-link">Parceiros</a>
+            <a href="regras-cidade.html" class="nav-link text-orange">Regras RP</a>
+            <a href="recrutamento.html" class="nav-link text-orange">Recrutamento</a>
+            <a href="midia.html" class="nav-link">Mídia</a>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+            <i class="ph ph-list"></i>
+        </button>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <header class="page-hero" style="background-image: url('assets/img/bg-servicos.jpg'), url('https://images.unsplash.com/photo-1590402237248-be3195f269a8?q=80&w=1920&auto=format&fit=crop');">
+        <div class="page-hero-content">
+            <h1 class="text-orange">Serviços e Burocracia</h1>
+            <p>Painel oficial para processamento de pagamentos semanais, aquisição de horas e justificativas.</p>
+        </div>
+    </header>
+
+    <!-- MAIN FORMS AREA -->
+    <section class="section-pad">
+        <div class="container">
+            
+            <!-- TABS DE NAVEGAÇÃO -->
+            <div class="service-tabs">
+                <button class="tab-btn active" data-tab="tab-pagamento">
+                    <i class="ph ph-wallet"></i> Solicitar Pagamento
+                </button>
+                <button class="tab-btn" data-tab="tab-cargo">
+                    <i class="ph ph-trend-up"></i> Compra de Cargo
+                </button>
+                <button class="tab-btn" data-tab="tab-horas">
+                    <i class="ph ph-clock"></i> Compra de Horas
+                </button>
+                <button class="tab-btn" data-tab="tab-justificativa">
+                    <i class="ph ph-user-minus"></i> Justificar Ausência
+                </button>
+            </div>
+
+            <!-- TAB 1: SOLICITAR PAGAMENTO -->
+            <div class="form-panel" id="tab-pagamento">
+                <h3>Solicitar Pagamento</h3>
+                <p class="text-dim">Validação de faturamento salarial. Certifique-se de ter cumprido sua meta legal de no mínimo 5 horas do serviço logado.</p>
+                
+                <form class="bmi-form" id="form-pagamento" novalidate>
+                    <input type="hidden" name="Tipo" value="💳 SOLICITAÇÃO DE PAGAMENTO">
+                    
+                    <div class="grid-2">
+                        <div class="input-group">
+                            <label>Nome Oficial e Sobrenome</label>
+                            <input type="text" name="Nome" placeholder="Ex: Lucas Fenix" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Passaporte (ID na Cidade)</label>
+                            <input type="number" name="ID_Cidade" placeholder="Apenas os números" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Discord ID</label>
+                        <input type="text" name="ID_Discord" placeholder="Ex: usuario_bmi" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Cargo Atual de Trabalho</label>
+                        <!-- Seletor puxa a lógica e calcula salário automaticamente -->
+                        <select id="pagamento-cargo" name="Cargo" required>
+                            <option value="" disabled selected>Selecionar o seu cargo...</option>
+                            <option value="Executivo" data-salario="$ 2.000.000">Executivo</option>
+                            <option value="Gerente Geral" data-salario="$ 1.150.000">Gerente Geral</option>
+                            <option value="Diretor Auxiliar" data-salario="$ 950.000">Diretor Auxiliar</option>
+                            <option value="Líder Mecânica" data-salario="$ 670.000">Líder Mecânica</option>
+                            <option value="Mecânico Chefe" data-salario="$ 460.000">Mecânico Chefe</option>
+                            <option value="Mecânico Sênior" data-salario="$ 380.000">Mecânico Sênior</option>
+                            <option value="Mecânico" data-salario="$ 420.000">Mecânico</option>
+                            <option value="Mecânico Auxiliar" data-salario="$ 260.000">Mecânico Auxiliar</option>
+                            <option value="Aprendiz Mecânica" data-salario="$ 150.000">Aprendiz Mecânica</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="text-orange">Salário Referente ao Cargo Selecionado</label>
+                        <input type="text" id="pagamento-salario" name="Salario_Do_Cargo" placeholder="O sistema calculará automaticamente..." style="background: rgba(255,107,0,0.05); pointer-events: none; border-style: dashed; color: var(--clr-primary); font-weight: bold;" readonly>
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="input-group">
+                            <label>Horário que espera receber</label>
+                            <input type="time" name="Horario_Recebimento" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Data de Solicitação</label>
+                            <input type="date" name="Data_Meta" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Bônus Adicional / Justificativa (Opcional)</label>
+                        <input type="text" name="Bonus" placeholder="Ex: Top 1 do Ranking Semanal +$200k">
+                    </div>
+
+                    <div class="status-box text-center mb-3 text-dim form-status">Status: Aguardando envio...</div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; font-size:1.1rem;">Enviar Solicitação</button>
+                </form>
+            </div>
+
+            <!-- TAB 2: COMPRA DE CARGO -->
+            <div class="form-panel hidden" id="tab-cargo">
+                <h3>Compra de Cargo VIP</h3>
+                <p class="text-dim">Promoção acelerada na hierarquia. Sujeito à aprovação do Conselho de Tesouraria.</p>
+                <form class="bmi-form" id="form-cargo" novalidate>
+                    <input type="hidden" name="Tipo" value="🚀 COMPRA DE CARGO">
+                    
+                    <div class="grid-2">
+                        <div class="input-group">
+                            <label>Seu ID</label>
+                            <input type="number" name="ID_Comprador" placeholder="Ex: 51" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Para Qual Cargo Deseja Subir?</label>
+                            <!-- Simulação de cálculo de cargo -->
+                            <select id="cargo-desejado" name="Cargo_Desejado" required>
+                                <option value="" disabled selected>Selecione a Patente...</option>
+                                <option value="Mecânico Chefe" data-custo="20">Mecânico Chefe (R$ 20,00)</option>
+                                <option value="Líder Mecânica" data-custo="50">Líder Mecânica (R$ 50,00)</option>
+                                <option value="Gerente Geral" data-custo="100">Gerente Geral (R$ 100,00)</option>
+                                <option value="Sub-Dono" data-custo="300">Sub-Dono Premium (R$ 300,00)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Cupom de Desconto</label>
+                        <input type="text" id="cargo-cupom" name="Cupom" placeholder="Ex: FENIX20">
+                    </div>
+
+                    <!-- Calculadora Cargo -->
+                    <div class="card mb-4 text-center" style="background: rgba(255,107,0,0.05); padding: 25px; border-radius: 8px; border: 1px dashed rgba(255,107,0,0.3); margin-bottom: 25px;">
+                        <span class="text-dim text-sm block mb-2">Total Ajustado pelo Sistema</span>
+                        <div class="font-bold text-orange" style="font-size: 2rem;">Total: <span id="cargo-total-view">R$ 0,00</span></div>
+                        <input type="hidden" id="cargo-total-hidden" name="TOTAL_A_PAGAR">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Comprovante do PIX Realizado</label>
+                        <input type="file" name="Comprovante" accept="image/png, image/jpeg, image/pdf" required>
+                        <span class="text-dim" style="font-size: 0.8rem; margin-top: 5px;">Formatos suportados: PNG, JPG ou PDF (Será enviado via Cloudinary)</span>
+                    </div>
+
+                    <div class="status-box text-center mb-3 text-dim form-status">Status: Aguardando envio...</div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; font-size:1.1rem;">Efetuar Upgrade</button>
+                </form>
+            </div>
+
+            <!-- TAB 3: COMPRA DE HORAS -->
+            <div class="form-panel hidden" id="tab-horas">
+                <h3>Compra de Horas / Multa</h3>
+                <p class="text-dim">Cumpra suas horas perdidas da semana injetando capital físico ou contábil na firma.</p>
+                <form class="bmi-form" id="form-horas" novalidate>
+                    <input type="hidden" name="Tipo" value="⏳ COMPRA DE HORAS">
+                    
+                    <div class="grid-2">
+                        <div class="input-group">
+                            <label>Seu ID Corporativo</label>
+                            <input type="number" name="ID_Cidade" placeholder="Apenas números..." required>
+                        </div>
+                        <div class="input-group">
+                            <label>Quantas horas deseja comprar?</label>
+                            <input type="number" id="horas-qty" name="Qtd_Horas" min="1" max="50" placeholder="Ex: 5" required>
+                        </div>
+                    </div>
+
+                    <!-- Calculadora Horas -->
+                    <div class="card text-center" style="background: rgba(16, 185, 129, 0.1); padding: 25px; border-radius: 8px; border: 1px dashed rgba(16, 185, 129, 0.3); margin-bottom: 25px;">
+                        <span class="text-dim text-sm block mb-2">Cotação Atual: 1 Hora = R$ 1,00 PIX ou $ 100.000 Dinheiro Sujo</span>
+                        <div class="font-bold" style="font-size: 2rem; color: #10B981;">Devido: <span id="horas-total-view">R$ 0,00</span></div>
+                        <input type="hidden" id="horas-total-hidden" name="TOTAL_A_PAGAR">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Método de Pagamento</label>
+                        <select id="horas-metodo" name="Metodo" required>
+                            <option value="" disabled selected>Como deseja pagar a multa?</option>
+                            <option value="PIX">Dinheiro em PIX (Real)</option>
+                            <option value="INGAME">Dinheiro em Jogo (Lojinha Interna)</option>
+                        </select>
+                    </div>
+
+                    <!-- BLOCK PIX UI ESCONDIDO POR PADRÃO -->
+                    <div id="pix-ui-block" class="hidden">
+                        <h4 style="margin-bottom: 15px; text-transform: uppercase; color: var(--clr-primary);">Dados de Pagamento</h4>
+                        <div class="grid-2">
+                            <div class="pix-box">
+                                <img src="assets/parceiros/qr_placeholder.png" alt="QR Code PIX">
+                                <p style="font-size: 0.9rem;">Escaneie com celular</p>
+                            </div>
+                            <div style="display: flex; flex-direction: column; justify-content: center;">
+                                <label style="margin-bottom: 10px; color: var(--clr-text-light);">Ou utilize o PIX Copia e Cola:</label>
+                                <div class="pix-key">contato@mecanicabmi.com.br</div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>Anexar Comprovante PIX</label>
+                            <input type="file" name="Comprovante" accept="image/png, image/jpeg, image/pdf" required>
+                        </div>
+                    </div>
+
+                    <div class="status-box text-center mb-3 text-dim form-status">Status: Aguardando envio...</div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; font-size:1.1rem;">Enviar Pagamento de Horas</button>
+                </form>
+            </div>
+
+            <!-- TAB 4: JUSTIFICATIVA DE AUSÊNCIA -->
+            <div class="form-panel hidden" id="tab-justificativa">
+                <h3>Justificar Ausência</h3>
+                <p class="text-dim">Abra uma ressalva caso precise se afastar de Los Santos por dias seguidos, congelando sua meta semanal.</p>
+                
+                <form class="bmi-form" id="form-justificativa" novalidate>
+                    <input type="hidden" name="Tipo" value="🚨 JUSTIFICATIVA">
+                    
+                    <div class="grid-2">
+                        <div class="input-group">
+                            <label>Nome Oficial Mínimo</label>
+                            <input type="text" name="Nome" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Seu ID</label>
+                            <input type="number" name="ID_Cidade" required>
+                        </div>
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="input-group">
+                            <label>Data de Início do Afastamento</label>
+                            <input type="date" name="Data_Saida" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Previsão de Volta (Retorno)</label>
+                            <input type="date" name="Data_Volta" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Motivo ou Causa do Afastamento</label>
+                        <textarea name="Motivo" rows="4" placeholder="Indique de forma clara no mínimo 3 motivos..." required></textarea>
+                    </div>
+
+                    <!-- Mensagem de Respeito -->
+                    <div style="background: rgba(255,107,0,0.1); border-left: 3px solid var(--clr-primary); padding: 20px; font-size: 0.95rem; margin-bottom: 25px; border-radius: 4px;">
+                        <strong>Nota Importante:</strong> O envio desta justificativa não garante sua isenção caso o motivo seja raso. A gerência tem o poder de auditar.
+                    </div>
+
+                    <div class="status-box text-center mb-3 text-dim form-status">Status: Aguardando preenchimento...</div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; font-size:1.1rem;">Protocolar Ausência</button>
+                </form>
+            </div>
+
+            <!-- SUCCESS PANEL GLOBAL -->
+            <div class="form-panel hidden text-center form-success" id="form-success-msg" style="padding: 100px 40px; border-top: 5px solid #10B981; border-color: #10B981; box-shadow: 0 0 40px rgba(16, 185, 129, 0.2);">
+                <i class="ph-fill ph-check-circle" style="font-size: 6rem; color: #10B981; margin-bottom: 20px; display: block;"></i>
+                <h3 style="font-size: 2.2rem;">Protocolo Recebido e Autenticado</h3>
+                <p class="text-dim mb-4" style="font-size: 1.1rem;">A sua requisição foi transmitida em tempo real e de forma segura para os diretores da organização no Discord (Setor de Atendimento).</p>
+                <button type="button" class="btn btn-outline" id="btn-voltar-form" style="width: 100%; max-width: 400px; padding: 15px; margin-top: 20px;">
+                    Registrar Nova Operação
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER GLOBAL -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="footer-brand">
+                    <img src="assets/logo/logo sem fundo.png" alt="BMI Logo">
+                </a>
+                <p class="footer-desc">Manutenção, tunagem e desmanche logístico corporativo operando ininterruptamente nas artérias de Los Santos.</p>
+            </div>
+            
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <h4>Corporativo</h4>
+                    <ul>
+                        <li><a href="mecanica.html">História e Board</a></li>
+                        <li><a href="operacao.html">Portaria de Regras</a></li>
+                        <li><a href="regras-cidade.html">Regras da Cidade</a></li>
+                        <li><a href="parceiros.html">Governamentais e Aliados</a></li>
+                        <li><a href="contato.html">Apoio Jurídico / Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Membros</h4>
+                    <ul>
+                        <li><a href="servicos.html">Pagamento de Salários</a></li>
+                        <li><a href="servicos.html">Ponto Eletrônico</a></li>
+                        <li><a href="recrutamento.html">Central de Vagas</a></li>
+                        <li><a href="midia.html">Rádio Station</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Conecte-se</h4>
+                <a href="https://discord.gg/vDZvtrs8Ff" target="_blank" class="btn btn-primary" style="width: 100%; padding: 12px; font-size: 0.9rem;">
+                    <i class="ph-fill ph-discord-logo"></i> Portal Discord
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mecânica BMI &mdash; Direitos Reservados.</p>
+            <p class="footer-dev">Developed by <a href="https://github.com/OliveiraStrategic" target="_blank" rel="noopener">Oliveira Strategic</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/global.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>

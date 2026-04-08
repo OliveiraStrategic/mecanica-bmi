@@ -1,0 +1,357 @@
+/* ==============================================================
+   PAGES COMPONENTS CSS (mecanica.html, operacao.html)
+   ============================================================== */
+
+/* ==============================================================
+   1. PAGE HERO (Banners Superiores Internos)
+   ============================================================== */
+.page-hero {
+    height: 60vh;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 80px;
+}
+.page-hero::before {
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(6,6,6,0.6) 0%, rgba(6,6,6,1) 95%);
+}
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+}
+.page-hero-content h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 0 5px 20px rgba(0,0,0,0.8);
+}
+.page-hero-content p {
+    font-size: 1.2rem;
+    color: var(--clr-text-dim);
+}
+
+/* Faixa de Liderança */
+.leadership-strip {
+    background: linear-gradient(90deg, rgba(255,107,0,0.05) 0%, rgba(255,107,0,0.15) 50%, rgba(255,107,0,0.05) 100%);
+    border-bottom: 1px solid rgba(255,107,0,0.3);
+    border-top: 1px solid rgba(255,107,0,0.3);
+    padding: 20px 0;
+    text-align: center;
+}
+.leadership-strip h3 { font-size: 1.1rem; letter-spacing: 2px; }
+
+/* ==============================================================
+   2. TEXT BLOCKS & GENERAL SECTIONS
+   ============================================================== */
+.section-pad { padding: 80px 0; }
+.bg-darker { background-color: #0A0A0A; border-top: 1px solid var(--clr-border-dim); border-bottom: 1px solid var(--clr-border-dim); }
+
+.article-box {
+    background: var(--clr-bg-card);
+    border: 1px solid var(--clr-border-dim);
+    padding: 50px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-top: 3px solid var(--clr-primary);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+.article-box p { font-size: 1.1rem; color: var(--clr-text-dim); line-height: 1.9; margin-bottom: 20px; }
+.article-box p:last-child { margin-bottom: 0; }
+.article-box strong { color: #fff; }
+
+/* ==============================================================
+   3. FOUNDERS CARDS (A Mecânica)
+   ============================================================== */
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+.founder-card {
+    background: var(--clr-bg-card);
+    border: 1px solid var(--clr-primary);
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.1);
+    transition: var(--transition);
+}
+.founder-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(255, 107, 0, 0.2); }
+.founder-icon-wrapper {
+    background: rgba(255,107,0,0.1);
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px auto;
+    border: 1px solid rgba(255,107,0,0.3);
+}
+.founder-icon-wrapper i { font-size: 2.5rem; color: var(--clr-primary); }
+.founder-card h4 { font-size: 1.4rem; color: #fff; margin-bottom: 5px; }
+.founder-role { color: var(--clr-primary); font-size: 0.9rem; font-weight: 600; margin-bottom: 15px; display: block; text-transform: uppercase; letter-spacing: 1px; }
+.founder-desc { font-size: 0.9rem; color: var(--clr-text-dim); }
+
+/* ==============================================================
+   4. HIERARCHY GRID (Operação)
+   ============================================================== */
+.hierarchy-category { margin-bottom: 50px; }
+.hierarchy-category h3 { 
+    color: var(--clr-primary); font-size: 1.6rem; margin-bottom: 25px; 
+    padding-bottom: 10px; border-bottom: 2px solid rgba(255, 107, 0, 0.2); 
+    display: inline-block;
+}
+.h-grid { display: flex; flex-wrap: wrap; gap: 15px; }
+.rank-card { 
+    background: var(--clr-bg-card); border: 1px solid var(--clr-border-dim); 
+    padding: 20px 30px; border-radius: 4px; text-align: center; 
+    flex-grow: 1; min-width: 220px; transition: var(--transition);
+}
+.rank-card:hover { border-color: rgba(255,255,255,0.3); background: #1a1a1a; }
+.rank-card h4 { font-size: 1.1rem; letter-spacing: 1px; color: var(--clr-text-light); }
+
+.rank-tier-3 { border-color: rgba(255,255,255,0.4); }
+.rank-tier-2 { border-color: rgba(255,107,0,0.5); }
+.rank-tier-1 { border-color: var(--clr-primary); box-shadow: inset 0 0 15px rgba(255,107,0,0.1); }
+.rank-tier-1 h4 { color: var(--clr-primary); }
+
+/* ==============================================================
+   5. RULES EXCLUSIVE LISTS (Operação)
+   ============================================================== */
+.rules-list { list-style: none; max-width: 900px; margin: 0 auto; }
+.rules-list li {
+    background: var(--clr-bg-card);
+    border: 1px solid var(--clr-border-dim);
+    border-left: 3px solid var(--clr-primary);
+    padding: 25px 30px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.rule-icon { font-size: 2rem; color: var(--clr-primary); margin-top: 5px; }
+.rule-content strong { color: #fff; font-size: 1.1rem; display: block; margin-bottom: 5px; }
+.rule-content { color: var(--clr-text-dim); line-height: 1.6; }
+
+/* Blocos divididos */
+.rules-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 1000px; margin: 0 auto; }
+.rule-block { background: var(--clr-bg-card); padding: 25px; border-radius: 4px; margin-bottom: 20px; border: 1px solid var(--clr-border-dim); }
+.rule-block h4 { color: #fff; font-size: 1.1rem; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+.rule-block h4 i { color: var(--clr-primary); font-size: 1.3rem; }
+.rule-block p { color: var(--clr-text-dim); font-size: 0.95rem; }
+
+/* ==============================================================
+   6. COMMANDS TERMINAL (Operação)
+   ============================================================== */
+.terminal-box {
+    background: #020202;
+    border: 1px solid rgba(255,107,0,0.3);
+    border-radius: 8px;
+    padding: 40px;
+    font-family: monospace;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+.cmd-item { border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 20px; margin-bottom: 20px; }
+.cmd-item:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+.cmd-code { color: var(--clr-primary); font-size: 1.2rem; font-weight: bold; background: rgba(255,107,0,0.1); padding: 4px 10px; border-radius: 4px; border: 1px solid rgba(255,107,0,0.2); margin-right: 15px;}
+.cmd-desc { color: var(--clr-text-dim); margin-top: 10px; font-family: var(--font-body); font-size: 0.95rem; line-height: 1.6; }
+
+/* ==============================================================
+   7. DESMANCHE & METAS (Operação)
+   ============================================================== */
+.alert-box {
+    background: rgba(255,50,50,0.1);
+    border-left: 4px solid #ff3333;
+    padding: 25px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.alert-box i { font-size: 3rem; color: #ff3333; }
+.alert-box p { color: #fff; line-height: 1.6; }
+
+.dual-card { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--clr-border-dim); border-radius: 8px; overflow: hidden; }
+.dual-side { padding: 40px; text-align: center; background: var(--clr-bg-card); display: flex; flex-direction: column; justify-content: center;}
+.dual-side h4 { font-size: 1.3rem; margin-bottom: 15px; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 15px; }
+.dual-side .percent { font-size: 3rem; font-weight: 800; margin-bottom: 15px; }
+
+/* Responsividade movida para o Master no final do arquivo */
+
+/* ==============================================================
+   8. PARTNERS CARDS (Parceiros)
+   ============================================================== */
+.partners-category { margin-bottom: 4rem; }
+.partners-category h3 { color: var(--clr-primary); margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px dashed rgba(255,107,0,0.3); font-size: 1.8rem; text-align: center; }
+.partners-flex { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+.partner-card { background: var(--clr-bg-card); border: 1px solid var(--clr-border-dim); padding: 40px 30px; border-radius: 8px; flex: 1 1 300px; max-width: 380px; display: flex; flex-direction: column; transition: var(--transition); box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
+.partner-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.5); border-color: rgba(255,107,0,0.3); }
+.partner-logo { height: 120px; background: rgba(0,0,0,0.4); border-radius: 8px; border: 1px dashed rgba(255,255,255,0.1); margin-bottom: 2rem; padding: 15px; display: flex; align-items: center; justify-content: center; transition: var(--transition);}
+.partner-card:hover .partner-logo { border-color: rgba(255,107,0,0.4); background: rgba(0,0,0,0.8); }
+.partner-badge { display: inline-block; padding: 6px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin: 0 auto 20px auto; width: fit-content; letter-spacing: 1px; }
+
+/* Themes para Categorias */
+.partner-badge.institutional { background: rgba(74, 144, 226, 0.1); color: #4A90E2; border: 1px solid rgba(74, 144, 226, 0.3); }
+.partner-badge.commercial { background: rgba(241, 196, 15, 0.1); color: #f1c40f; border: 1px solid rgba(241, 196, 15, 0.3); }
+.partner-badge.faction { background: rgba(255, 50, 50, 0.1); color: #ff3333; border: 1px solid rgba(255, 50, 50, 0.3); }
+
+/* UTILITÁRIO OFICIAL (Ocultar parceiros) */
+.hidden { display: none !important; }
+
+/* ==============================================================
+   9. RECRUITMENT (Recrutamento)
+   ============================================================== */
+.req-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.req-card { background: rgba(0,0,0,0.5); padding: 30px; border: 1px solid var(--clr-border-dim); border-radius: 8px; border-left: 3px solid var(--clr-primary); transition: var(--transition); }
+.req-card:hover { border-color: rgba(255,107,0,0.5); background: #111; }
+.req-card i { font-size: 2.2rem; color: var(--clr-primary); margin-bottom: 15px; display: block; }
+
+.benefits-block { background: linear-gradient(135deg, var(--clr-primary) 0%, #cc5500 100%); color: #000; padding: 60px 0; margin: 80px 0; border-radius: 8px; box-shadow: 0 10px 40px rgba(255,107,0,0.2); }
+.benef-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; padding: 0 40px; }
+.benef-card { text-align: center; }
+.benef-card i { font-size: 3.5rem; margin-bottom: 15px; color: #fff; }
+.benef-card h4 { font-size: 1.3rem; margin-bottom: 10px; font-weight: 800; }
+
+.steps-list { max-width: 800px; margin: 0 auto; padding-left: 20px; border-left: 2px solid rgba(255,107,0,0.3); }
+.step-item { position: relative; padding-bottom: 40px; padding-left: 30px; }
+.step-item:last-child { padding-bottom: 0; }
+.step-item::before { content: ''; position: absolute; left: -31px; top: 0; width: 16px; height: 16px; border-radius: 50%; background: var(--clr-primary); border: 4px solid var(--clr-bg-main); box-shadow: 0 0 10px var(--clr-primary); }
+.step-item h4 { color: #fff; font-size: 1.3rem; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+
+/* FAQ */
+.faq-box { max-width: 800px; margin: 0 auto; }
+.faq-item { background: var(--clr-bg-card); border: 1px solid var(--clr-border-dim); margin-bottom: 15px; border-radius: 8px; padding: 25px; transition: var(--transition); }
+.faq-item:hover { border-color: rgba(255,255,255,0.2); }
+.faq-q { color: var(--clr-primary); font-weight: bold; margin-bottom: 5px; font-size: 1.1rem; display: flex; gap: 10px; align-items: flex-start;}
+.faq-a { color: var(--clr-text-dim); padding-left: 35px; line-height: 1.6; }
+
+/* ==============================================================
+   10. MEDIA & RADIO (Mídia)
+   ============================================================== */
+.radio-container { max-width: 600px; margin: 0 auto 80px auto; background: var(--clr-bg-card); border: 1px solid var(--clr-primary); border-radius: 12px; padding: 40px; text-align: center; box-shadow: 0 10px 40px rgba(255,107,0,0.1); position: relative; overflow: hidden; }
+.radio-container::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #111, var(--clr-primary), #111); }
+.radio-viz { height: 120px; background: #000; border-radius: 8px; margin-bottom: 30px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1); overflow:hidden; position: relative;}
+.radio-viz i { font-size: 4rem; color: rgba(255,107,0,0.2); animation: pulse 2s infinite;}
+.radio-viz.playing i { color: var(--clr-primary); animation: pulseBeat 0.8s infinite alternate cubic-bezier(0.4, 0, 0.2, 1); }
+
+.radio-controls { display: flex; align-items: center; justify-content: center; gap: 25px; margin-bottom: 25px; }
+.btn-circle { width: 60px; height: 60px; border-radius: 50%; background: var(--clr-primary); color: #000; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; border: none; cursor: pointer; transition: var(--transition); box-shadow: 0 5px 15px rgba(255,107,0,0.3); }
+.btn-circle:hover { transform: scale(1.1); background: #fff; box-shadow: 0 8px 20px rgba(255,255,255,0.3); }
+.vol-control { display: flex; align-items: center; gap: 15px; max-width: 300px; margin: 0 auto; color: var(--clr-text-dim); }
+/* ==============================================================
+   9. MIDIA & GALERIA (Mídia)
+   ============================================================== */
+.radio-container { background: var(--clr-bg-card); border: 1px solid var(--clr-border-dim); padding: 50px; border-radius: 8px; text-align: center; margin-bottom: 80px; box-shadow: 0 10px 40px rgba(0,0,0,0.4);}
+.radio-viz { height: 120px; display: flex; align-items: center; justify-content: center; gap: 5px; margin-bottom: 30px; color: var(--clr-primary); font-size: 4rem; opacity: 0.5; transition: opacity 0.5s ease;}
+.radio-viz.playing { opacity: 1; animation: pulseRadio 2s infinite ease-in-out; }
+@keyframes pulseRadio { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); text-shadow: 0 0 20px var(--clr-primary); } }
+.radio-controls { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;}
+.btn-play { width: 60px; height: 60px; border-radius: 50%; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; border: none; background: var(--clr-primary); color: #000; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s; box-shadow: 0 5px 20px rgba(255, 107, 0, 0.4);}
+.btn-play:hover { transform: scale(1.1); box-shadow: 0 5px 30px rgba(255, 107, 0, 0.6);}
+.vol-control { display: flex; align-items: center; gap: 15px; width: 200px; color: var(--clr-text-dim); }
+.vol-control input[type=range] { width: 100%; accent-color: var(--clr-primary); cursor: pointer; }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+.gallery-item { aspect-ratio: 16/9; background-size: cover; background-position: center; border-radius: 8px; border: 1px solid var(--clr-border-dim); transition: var(--transition); cursor: pointer; position: relative; overflow: hidden;}
+.gallery-item::after { content:''; position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.2); transition: var(--transition); }
+.gallery-item:hover { border-color: var(--clr-primary); transform: scale(1.02); z-index: 2; box-shadow: 0 10px 30px rgba(255,107,0,0.2);}
+.gallery-item:hover::after { background: transparent; }
+
+/* Responsividade movida para o Master no final do arquivo */
+
+/* ==============================================================
+   11. FORMS & SERVICES (Serviços)
+   ============================================================== */
+.service-tabs { display: flex; gap: 15px; margin-bottom: 40px; justify-content: center; flex-wrap: wrap; }
+.tab-btn { background: #111; border: 1px solid var(--clr-border-dim); color: var(--clr-text-dim); padding: 15px 30px; border-radius: 4px; cursor: pointer; transition: var(--transition); font-family: var(--font-heading); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; display:flex; align-items: center;}
+.tab-btn i { margin-right: 10px; font-size: 1.2rem; }
+.tab-btn:hover { background: #1a1a1a; color: #fff; border-color: rgba(255,107,0,0.3); transform: translateY(-3px);}
+.tab-btn.active { background: var(--clr-primary); color: #000; border-color: var(--clr-primary); font-weight: bold; }
+
+.form-panel { background: var(--clr-bg-card); border: 1px solid var(--clr-border-dim); padding: 50px; border-radius: 8px; max-width: 900px; margin: 0 auto 80px auto; border-top: 3px solid var(--clr-primary); box-shadow: 0 10px 40px rgba(0,0,0,0.4); animation: fadeIn 0.5s ease; }
+.form-panel.hidden { display: none; }
+.form-panel h3 { color: #fff; font-size: 1.8rem; margin-bottom: 10px; }
+
+.bmi-form { margin-top: 35px; }
+.input-group { margin-bottom: 25px; display: flex; flex-direction: column; }
+.input-group label { color: var(--clr-text-light); font-size: 0.95rem; margin-bottom: 10px; font-weight: 500; display: inline-block;}
+.input-group input, .input-group select, .input-group textarea { background: #060606; border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 16px; border-radius: 4px; font-family: var(--font-body); font-size: 1rem; transition: var(--transition); outline: none; width: 100%;}
+.input-group input:focus, .input-group select:focus, .input-group textarea:focus { border-color: var(--clr-primary); box-shadow: 0 0 10px rgba(255,107,0,0.2); }
+.input-group input[type="file"] { padding: 12px; background: rgba(0,0,0,0.3); border: 1px dashed rgba(255,107,0,0.4); cursor: pointer; }
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+/* Bloco PIX customizado */
+.pix-box { background: #000; border: 1px solid #32CD32; border-radius: 8px; padding: 30px; text-align: center; margin-bottom: 25px; box-shadow: 0 0 20px rgba(50,205,50,0.1);}
+.pix-box img { max-width: 200px; margin-bottom: 15px; padding: 10px; background: #fff; border-radius: 8px; border: 2px solid #32CD32; }
+.pix-key { background: #111; padding: 15px; border-radius: 4px; font-family: monospace; color: #32CD32; font-size: 1.1rem; border: 1px dashed #32CD32; user-select: all; margin-bottom: 15px;}
+
+.status-box { padding: 15px; border-radius: 4px; font-weight: bold; background: rgba(255,255,255,0.05); }
+.status-box.success { background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); }
+.status-box.error { background: rgba(255, 50, 50, 0.1); color: #ff3333; border: 1px solid rgba(255, 50, 50, 0.3); }
+
+/* Animation Utils */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+.form-success i { animation: bounce 2s infinite ease-in-out; }
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+
+/* ==============================================================
+   12. DOCUMENT EMBED (Regras da Cidade)
+   ============================================================== */
+.doc-wrapper { background: var(--clr-bg-card); border: 1px solid var(--clr-border-dim); border-radius: 8px; padding: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.4); position: relative; }
+.doc-container { width: 100%; height: 75vh; min-height: 600px; border: none; border-radius: 6px; background: #fff; }
+.doc-controls { display: flex; justify-content: flex-end; margin-bottom: 20px; }
+
+/* ==============================================================
+   13. MOBILE RESPONSIVE MASTER (Pages)
+   ============================================================== */
+@media (max-width: 900px) {
+    /* Hero */
+    .page-hero { min-height: 350px; padding-top: 60px; }
+    .page-hero-content h1 { font-size: 2.2rem; }
+    .leadership-strip h3 { font-size: 0.95rem; line-height: 1.5; padding: 0 15px;}
+
+    /* Grids & Cards */
+    .founders-grid, .rules-grid, .dual-card, .benef-grid, .gallery-grid { grid-template-columns: 1fr; gap: 20px; }
+    .grid-2 { grid-template-columns: 1fr; gap: 0; }
+    .article-box { padding: 30px 20px; }
+    .dual-side { border-bottom: 1px solid var(--clr-border-dim); padding: 30px 20px; }
+    
+    /* Parceiros & Recrutamento */
+    .partners-category h3 { font-size: 1.5rem; }
+    .partners-flex { flex-direction: column; }
+    .partner-card { padding: 30px 20px; max-width: 100%; margin: 0 auto; text-align: center; align-items: center;}
+    
+    .req-card { padding: 25px 20px; }
+    .steps-list { padding-left: 5px; border-left-color: rgba(255,107,0,0.3); }
+    .step-item { padding-left: 20px; }
+    .step-item::before { width: 14px; height: 14px; left: -22px; }
+    
+    /* Mídia & Rádio & Iframe */
+    .radio-container { padding: 30px 20px; }
+    .radio-viz { height: 100px; margin-bottom: 25px; }
+    .radio-viz i { font-size: 3.5rem; }
+    .vol-control { max-width: 100%; margin-top: 20px; }
+    .doc-container { height: 60vh; min-height: 450px; }
+    .doc-controls { justify-content: center; }
+    
+    /* Formulários de Serviços */
+    .form-panel { padding: 30px 20px; margin-bottom: 50px; }
+    .form-panel h3 { font-size: 1.6rem; text-align: center; }
+    .service-tabs { flex-direction: column; width: 100%; max-width: 100%; margin-bottom: 30px; }
+    .tab-btn { justify-content: center; width: 100%; padding: 18px; margin-bottom: 10px; font-size: 1rem; }
+    .input-group label { font-size: 1rem; }
+    .input-group input, .input-group select, .input-group textarea { padding: 18px; font-size: 1rem; }
+    .pix-box img { max-width: 80%; }
+}

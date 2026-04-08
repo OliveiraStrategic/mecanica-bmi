@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia e Rádio | Mecânica BMI</title>
+    
+    <meta name="description" content="Nossa frequência de Rádio local e banco de imagens das operações veiculares.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+    <!-- HEADER GLOBAL -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <a href="index.html">
+                <img src="assets/logo/logo sem fundo.png" alt="BMI Logo">
+            </a>
+        </div>
+        
+        <div class="nav-links" id="nav-links">
+            <a href="index.html" class="nav-link">Início</a>
+            <a href="mecanica.html" class="nav-link">A Mecânica</a>
+            <a href="operacao.html" class="nav-link">Operação</a>
+            <a href="servicos.html" class="nav-link">Serviços</a>
+            <a href="parceiros.html" class="nav-link">Parceiros</a>
+            <a href="regras-cidade.html" class="nav-link text-orange">Regras RP</a>
+            <a href="recrutamento.html" class="nav-link text-orange">Recrutamento</a>
+            <a href="midia.html" class="nav-link active">Mídia</a>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+            <i class="ph ph-list"></i>
+        </button>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <header class="page-hero" style="background-image: url('assets/img/bg-midia.jpg'), url('https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=1920&auto=format&fit=crop');">
+        <div class="page-hero-content">
+            <h1 class="text-orange">Rádio & Mídia</h1>
+            <p>Sintonize na frequência oficial da garagem ou acompanhe nossos diários em imagens.</p>
+        </div>
+    </header>
+
+    <!-- RADIO SYSTEM -->
+    <section class="section-pad">
+        <div class="container">
+            
+            <div class="radio-container">
+                <div class="radio-viz" id="radio-viz">
+                    <i class="ph-fill ph-speaker-hifi"></i>
+                </div>
+                
+                <h3 style="margin-bottom: 5px;">Rádio Station BMI</h3>
+                <p class="text-dim text-sm" style="margin-bottom: 30px;">Toque contínuo para o pátio de tunagem</p>
+
+                <!-- Elemento Audio Oculto (Stream de Rádio dinâmico carregado via JS) -->
+                <audio id="audio-player" preload="none"></audio>
+                
+                <div class="radio-controls">
+                    <button class="btn-circle" id="btn-play">
+                        <i class="ph-fill ph-play"></i>
+                    </button>
+                </div>
+
+                <div class="vol-control">
+                    <i class="ph-fill ph-speaker-low" id="vol-icon"></i>
+                    <input type="range" class="vol-slider" id="vol-slider" min="0" max="100" value="30">
+                    <i class="ph-fill ph-speaker-high"></i>
+                </div>
+
+                <div class="radio-status" id="radio-status">STATUS: OFFLINE</div>
+            </div>
+
+            <!-- GALLERY -->
+            <div class="section-header text-center" style="margin-top: 60px;">
+                <h2>Galeria de Operações</h2>
+                <p>O resultado estético da frota e maquinário preparado pelos nossos mecânicos</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Imagens Locais preparadas. Fallback na nuvem se a imagem local não existir -->
+                <div class="gallery-item" style="background-image: url('assets/img/midia-1.jpg'), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="gallery-item" style="background-image: url('assets/img/midia-2.jpg'), url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="gallery-item" style="background-image: url('assets/img/midia-3.jpg'), url('https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="gallery-item" style="background-image: url('assets/img/midia-4.jpg'), url('https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="gallery-item" style="background-image: url('assets/img/midia-5.jpg'), url('https://images.unsplash.com/photo-1610647752706-3bb12232b3ab?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="gallery-item" style="background-image: url('assets/img/midia-6.jpg'), url('https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=600&auto=format&fit=crop');"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER GLOBAL -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="footer-brand">
+                    <img src="assets/logo/logo sem fundo.png" alt="BMI Logo">
+                </a>
+                <p class="footer-desc">Manutenção, tunagem e desmanche logístico corporativo operando ininterruptamente nas artérias de Los Santos.</p>
+            </div>
+            
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <h4>Corporativo</h4>
+                    <ul>
+                        <li><a href="mecanica.html">História e Board</a></li>
+                        <li><a href="operacao.html">Portaria de Regras</a></li>
+                        <li><a href="regras-cidade.html">Regras da Cidade</a></li>
+                        <li><a href="parceiros.html">Governamentais e Aliados</a></li>
+                        <li><a href="contato.html">Apoio Jurídico / Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Membros</h4>
+                    <ul>
+                        <li><a href="servicos.html">Pagamento de Salários</a></li>
+                        <li><a href="servicos.html">Ponto Eletrônico</a></li>
+                        <li><a href="recrutamento.html">Central de Vagas</a></li>
+                        <li><a href="midia.html">Rádio Station</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Conecte-se</h4>
+                <a href="https://discord.gg/vDZvtrs8Ff" target="_blank" class="btn btn-primary" style="width: 100%; padding: 12px; font-size: 0.9rem;">
+                    <i class="ph-fill ph-discord-logo"></i> Portal Discord
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mecânica BMI &mdash; Direitos Reservados.</p>
+            <p class="footer-dev">Developed by <a href="https://github.com/OliveiraStrategic" target="_blank" rel="noopener">Oliveira Strategic</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/global.js"></script>
+    <script src="js/radio.js"></script>
+</body>
+</html>
